@@ -21,8 +21,8 @@ body {
 }
 
 #greeting-section #greeting-message-wrapper #greeting-message-name {
-  padding-top: 200px;
-  font-size: 56;
+  padding-top: 150px;
+  font-size: 200;
 }
 
 #greeting-section #social-icons {
@@ -42,27 +42,31 @@ body {
 #greeting-section #social-icons a i {
   opacity: 0;
 
-  -webkit-transform: translateY(30px);
-     -moz-transform: translateY(30px);
-      -ms-transform: translateY(30px);
-       -o-transform: translateY(30px);
-          transform: translateY(30px);
-}
-
-#greeting-section #social-icons a i.animate {
   -webkit-transition: all 0.3s ease-in;
      -moz-transition: all 0.3s ease-in;
       -ms-transition: all 0.3s ease-in;
        -o-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in;
 
+  -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+       -o-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+#greeting-section #social-icons a i:hover {
+  font-size: 60;
+}
+
+#greeting-section #social-icons a i.animate {
+  opacity: 1;
+
   -webkit-transform: translateY(0px);
      -moz-transform: translateY(0px);
       -ms-transform: translateY(0px);
        -o-transform: translateY(0px);
           transform: translateY(0px);
-
-  opacity: 1;
 }
 
 #greeting-section #social-icons a i.fa-twitter {
@@ -71,6 +75,7 @@ body {
 
 #greeting-section #social-icons a i.fa-vine {
   color: #00a478;
+
   -webkit-transition-delay: 0.03s;
      -moz-transition-delay: 0.03s;
       -ms-transition-delay: 0.03s;
@@ -80,6 +85,7 @@ body {
 
 #greeting-section #social-icons a i.fa-linkedin {
   color: #0092D8;
+
   -webkit-transition-delay: 0.06s;
      -moz-transition-delay: 0.06s;
       -ms-transition-delay: 0.06s;
@@ -89,6 +95,7 @@ body {
 
 #greeting-section #social-icons a i.fa-github {
   color: #AEADAF;
+
   -webkit-transition-delay: 0.09s;
      -moz-transition-delay: 0.09s;
       -ms-transition-delay: 0.09s;
@@ -100,8 +107,65 @@ body {
   background-color: #E67E22;
 }
 
+#bio-section #bio-section-text {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#bio-section #bio-section-text p {
+  margin: 0;
+  padding-top: 200px;
+}
+
 #showcase-section {
   background-color: #3498DB;
+}
+
+#showcase-section #showcase-image-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#showcase-section #showcase-image-wrapper .image-placeholder {
+  display: inline-block;
+  opacity: 0;
+  height: 150px;
+  width: 200px;
+  margin: 200px 20px;
+
+  background-color: lightgray;
+
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+       -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+}
+
+#showcase-section #showcase-image-wrapper .image-placeholder.animate {
+  opacity: 1;
+}
+
+#showcase-section #showcase-image-wrapper #image-placeholder-1 {
+  -webkit-transition-delay: 0.2s;
+     -moz-transition-delay: 0.2s;
+      -ms-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+#showcase-section #showcase-image-wrapper #image-placeholder-2 {
+  -webkit-transition-delay: 0.4s;
+     -moz-transition-delay: 0.4s;
+      -ms-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+#showcase-section #showcase-image-wrapper #image-placeholder-3 {
+  -webkit-transition-delay: 0.6s;
+     -moz-transition-delay: 0.6s;
+      -ms-transition-delay: 0.6s;
+       -o-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 #interests-section {
