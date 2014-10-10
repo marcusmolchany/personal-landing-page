@@ -121,17 +121,34 @@ body {
   background-color: #3498DB;
 }
 
-#showcase-section #showcase-image-wrapper {
+#showcase-section #showcase-title {
+  padding-top: 100px;
+
+  font-size: 56;
+}
+
+#showcase-section #showcase-wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
 
-#showcase-section #showcase-image-wrapper .image-placeholder {
+#showcase-section #showcase-wrapper a {
+  text-decoration: none;
+}
+
+#showcase-section #showcase-wrapper a:link,
+#showcase-section #showcase-wrapper a:visited,
+#showcase-section #showcase-wrapper a:active {
+  color: black;
+}
+
+#showcase-section #showcase-wrapper .showcase {
+  position: relative;
   display: inline-block;
   opacity: 0;
   height: 150px;
   width: 200px;
-  margin: 200px 20px;
+  margin: 100px 20px;
 
   background-color: lightgray;
 
@@ -142,30 +159,39 @@ body {
           transition: all 0.3s ease-in;
 }
 
-#showcase-section #showcase-image-wrapper .image-placeholder.animate {
+#showcase-section #showcase-wrapper .showcase.animate {
   opacity: 1;
 }
 
-#showcase-section #showcase-image-wrapper #image-placeholder-1 {
+#showcase-section #showcase-wrapper #showcase-menu-slider {
   -webkit-transition-delay: 0.2s;
      -moz-transition-delay: 0.2s;
       -ms-transition-delay: 0.2s;
        -o-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
-#showcase-section #showcase-image-wrapper #image-placeholder-2 {
+#showcase-section #showcase-wrapper #showcase-blog {
   -webkit-transition-delay: 0.4s;
      -moz-transition-delay: 0.4s;
       -ms-transition-delay: 0.4s;
        -o-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
-#showcase-section #showcase-image-wrapper #image-placeholder-3 {
+#showcase-section #showcase-wrapper #showcase-resume {
   -webkit-transition-delay: 0.6s;
      -moz-transition-delay: 0.6s;
       -ms-transition-delay: 0.6s;
        -o-transition-delay: 0.6s;
           transition-delay: 0.6s;
+}
+
+#showcase-section #showcase-wrapper .showcase .showcase-title {
+  padding-top: 20px;
+}
+
+#showcase-section #showcase-wrapper .showcase i {
+  font-size: 56;
+  padding-top: 15px;
 }
 
 #interests-section {
@@ -179,7 +205,7 @@ body {
 
 #interests-section #interests-section-text p {
   position: relative;
-  top: 50;
+  top: 140;
   margin: 0;
 }
 

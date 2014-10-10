@@ -5,7 +5,7 @@ var main = function() {
     var topOfWindow = $(window).scrollTop();
     console.log(topOfWindow);
 
-    var $showcaseSection = $(".image-placeholder");
+    var $showcaseSection = $(".showcase");
     if (topOfWindow >= 750 && !$showcaseSection.hasClass("animate")) {
       $showcaseSection.addClass("animate");
     } else if (topOfWindow < 400) {
@@ -15,8 +15,8 @@ var main = function() {
     var $interestsSectionParagraph = $("#interests-section p");
     if (topOfWindow >= 2000) {
 
-    } else if (topOfWindow >= 1300) {
-      var topOffset = (topOfWindow - 1100) / 4;
+    } else if (topOfWindow >= 1500) {
+      var topOffset = (topOfWindow - 940) / 4;
       $interestsSectionParagraph.css({'top': topOffset});
     }
   });
