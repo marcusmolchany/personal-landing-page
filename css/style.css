@@ -178,15 +178,16 @@ body {
 }
 
 #interests-section #interests-section-text p {
+  position: relative;
+  top: 50;
   margin: 0;
-  padding-top: 200px;
 }
 
 #contact-section {
   background-color: #E74C3C;
 }
 
-#contact-section #contact-button-wrapper #contact-button {
+#contact-section #contact-button-wrapper a #contact-button {
   height: 100px;
   width: 200px;
   border: 5px solid white;
@@ -196,6 +197,10 @@ body {
   font-size: 20;
 }
 
-#contact-section #contact-button-wrapper #contact-button:hover {
+#contact-section #contact-button-wrapper a #contact-button:hover {
   background-color: lightgray;
+}
+
+#contact-section #contact-button-wrapper a #contact-button:active {
+  background-color: gray;
 }
