@@ -1,4 +1,113 @@
 body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+  margin: 0;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+
+  background-color: lightgray;
+}
+
+.section {
+  position: relative;
+
+  height: 550px;
+
+  text-align: center;
+}
+
+#greeting-section {
+  height: 650px;
+  background-color: #9B59B6;
+}
+
+#greeting-section #greeting-message-wrapper #greeting-message-name {
+  padding-top: 200px;
+  font-size: 56;
+}
+
+#greeting-section #social-icons {
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  font-size: 56;
+}
+
+#greeting-section #social-icons a {
+  margin: 0 15px;
+
+  text-decoration: none;
+}
+
+#greeting-section #social-icons a i {
+  opacity: 0;
+
+  -webkit-transform: translateY(30px);
+     -moz-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+       -o-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+#greeting-section #social-icons a i.animate {
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+       -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+
+  opacity: 1;
+}
+
+#greeting-section #social-icons a i.fa-twitter {
+  color: #55ACEE;
+}
+
+#greeting-section #social-icons a i.fa-vine {
+  color: #00a478;
+  -webkit-transition-delay: 0.03s;
+     -moz-transition-delay: 0.03s;
+      -ms-transition-delay: 0.03s;
+       -o-transition-delay: 0.03s;
+          transition-delay: 0.03s;
+}
+
+#greeting-section #social-icons a i.fa-linkedin {
+  color: #0092D8;
+  -webkit-transition-delay: 0.06s;
+     -moz-transition-delay: 0.06s;
+      -ms-transition-delay: 0.06s;
+       -o-transition-delay: 0.06s;
+          transition-delay: 0.06s;
+}
+
+#greeting-section #social-icons a i.fa-github {
+  color: #AEADAF;
+  -webkit-transition-delay: 0.09s;
+     -moz-transition-delay: 0.09s;
+      -ms-transition-delay: 0.09s;
+       -o-transition-delay: 0.09s;
+          transition-delay: 0.09s;
+}
+
+#bio-section {
+  background-color: #E67E22;
+}
+
+#showcase-section {
+  background-color: #3498DB;
+}
+
+#interests-section {
+  background-color: #1ABC9C;
+}
+
+#contact-section {
+  background-color: #E74C3C;
 }
