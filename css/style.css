@@ -172,6 +172,30 @@ body {
   background-color: #1ABC9C;
 }
 
+#interests-section #interests-section-text {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#interests-section #interests-section-text p {
+  margin: 0;
+  padding-top: 200px;
+}
+
 #contact-section {
   background-color: #E74C3C;
+}
+
+#contact-section #contact-button-wrapper #contact-button {
+  height: 100px;
+  width: 200px;
+  border: 5px solid white;
+  border-radius: 50;
+  background-color: whitesmoke;
+  margin-top: 250px;
+  font-size: 20;
+}
+
+#contact-section #contact-button-wrapper #contact-button:hover {
+  background-color: lightgray;
 }
