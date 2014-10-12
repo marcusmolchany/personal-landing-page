@@ -28,6 +28,17 @@ body {
   padding-top: 150px;
   font-size: 200;
 }
+@media all and (max-width: 414px) {
+  #greeting-section #greeting-message-wrapper #greeting-message-name {
+    padding-top: 125px;
+  }
+}
+@media all and (max-width: 375px) {
+  #greeting-section #greeting-message-wrapper #greeting-message-name {
+    padding-top: 200px;
+    font-size: 88;
+  }
+}
 @media all and (max-width: 320px) {
   #greeting-section #greeting-message-wrapper #greeting-message-name {
     padding-top: 175px;
@@ -41,6 +52,11 @@ body {
   margin: 0 auto;
 
   font-size: 56;
+}
+@media all and (max-width: 375px) {
+  #greeting-section #social-icons {
+    font-size: 32;
+  }
 }
 @media all and (max-width: 320px) {
   #greeting-section #social-icons {
@@ -141,6 +157,18 @@ body {
 
   font-size: 56;
 }
+@media all and (max-width: 414px) {
+  #showcase-section #showcase-title {
+    padding-top: 50px;
+    font-size: 32;
+  }
+}
+@media all and (max-width: 375px) {
+  #showcase-section #showcase-title {
+    padding-top: 50px;
+    font-size: 32;
+  }
+}
 @media all and (max-width: 320px) {
   #showcase-section #showcase-title {
     padding-top: 50px;
@@ -178,6 +206,22 @@ body {
       -ms-transition: all 0.3s ease-in;
        -o-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in;
+}
+@media all and (max-width: 414px) {
+  #showcase-section #showcase-wrapper .showcase {
+    display: block;
+    height: 100px;
+    width: 126px;
+    margin: 40px 144px;
+  }
+}
+@media all and (max-width: 375px) {
+  #showcase-section #showcase-wrapper .showcase {
+    display: block;
+    height: 100px;
+    width: 125px;
+    margin: 40px 125px;
+  }
 }
 @media all and (max-width: 320px) {
   #showcase-section #showcase-wrapper .showcase {
@@ -218,6 +262,16 @@ body {
 #showcase-section #showcase-wrapper .showcase .showcase-title {
   padding-top: 20px;
 }
+@media all and (max-width: 414px) {
+  #showcase-section #showcase-wrapper .showcase .showcase-title {
+    padding-top: 15px;
+  }
+}
+@media all and (max-width: 375px) {
+  #showcase-section #showcase-wrapper .showcase .showcase-title {
+    padding-top: 15px;
+  }
+}
 @media all and (max-width: 320px) {
   #showcase-section #showcase-wrapper .showcase .showcase-title {
     padding-top: 8px;
@@ -227,6 +281,18 @@ body {
 #showcase-section #showcase-wrapper .showcase i {
   font-size: 56;
   padding-top: 15px;
+}
+@media all and (max-width: 414px) {
+  #showcase-section #showcase-wrapper .showcase i {
+    font-size: 36;
+    padding-top: 10px;
+  }
+}
+@media all and (max-width: 375px) {
+  #showcase-section #showcase-wrapper .showcase i {
+    font-size: 36;
+    padding-top: 10px;
+  }
 }
 @media all and (max-width: 320px) {
   #showcase-section #showcase-wrapper .showcase i {
