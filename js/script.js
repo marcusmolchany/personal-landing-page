@@ -3,7 +3,6 @@ var main = function() {
 
   $(window).scroll(function() {
     var topOfWindow = $(window).scrollTop();
-    console.log(topOfWindow);
 
     var $showcaseSection = $(".showcase");
     if (topOfWindow >= 750 && !$showcaseSection.hasClass("animate")) {
