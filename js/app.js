@@ -10310,7 +10310,6 @@ return jQuery;
   animateSocialIcons();
 
   $(window).scroll(function() {
-    console.dir("bam");
     var topOfWindow = $(window).scrollTop();
 
     var $showcaseSection = $(".showcase");
