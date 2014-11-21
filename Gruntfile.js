@@ -7,7 +7,6 @@ module.exports = function (grunt) {
             },
             js: {
                 src: [
-                    'js/jquery-1.11.1.js',
                     'js/script.js'
                 ],
                 dest: 'js/app.js'
