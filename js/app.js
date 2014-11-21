@@ -1,28 +1,30 @@
-var main = function() {
-  animateSocialIcons();
+;(function() {
+  var main = function() {
+    animateSocialIcons();
 
-  $(window).scroll(function() {
-    var topOfWindow = $(window).scrollTop();
+    $(window).scroll(function() {
+      var topOfWindow = $(window).scrollTop();
 
-    var $showcaseSection = $(".showcase");
-    if (topOfWindow >= 750 && !$showcaseSection.hasClass("animate")) {
-      $showcaseSection.addClass("animate");
-    } else if (topOfWindow < 400) {
-      $showcaseSection.removeClass("animate");
-    }
+      var $showcaseSection = $(".showcase");
+      if (topOfWindow >= 750 && !$showcaseSection.hasClass("animate")) {
+        $showcaseSection.addClass("animate");
+      } else if (topOfWindow < 400) {
+        $showcaseSection.removeClass("animate");
+      }
 
-    var $interestsSectionParagraph = $("#interests-section p");
-    if (topOfWindow >= 2000) {
+      var $interestsSectionParagraph = $("#interests-section p");
+      if (topOfWindow >= 2000) {
 
-    } else if (topOfWindow >= 1500) {
-      var topOffset = (topOfWindow - 940) / 4;
-      $interestsSectionParagraph.css({'top': topOffset});
-    }
-  });
-}
+      } else if (topOfWindow >= 1500) {
+        var topOffset = (topOfWindow - 940) / 4;
+        $interestsSectionParagraph.css({'top': topOffset});
+      }
+    });
+  }
 
-var animateSocialIcons = function() {
-  $(".fa").addClass("animate");
-}
+  var animateSocialIcons = function() {
+    $(".fa").addClass("animate");
+  }
 
-$(document).ready(main);
+  $(document).ready(main);
+})();
