@@ -17,7 +17,7 @@ body {
 
 #greeting-section {
   height: 800px;
-  background: url('../media/background-img2.png') no-repeat;
+  background: url('../media/background-img.png') no-repeat;
   background-size: cover;
 }
 @media all and (max-width: 414px) {
