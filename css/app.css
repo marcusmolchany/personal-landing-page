@@ -16,33 +16,45 @@ body {
 }
 
 #greeting-section {
-  height: 650px;
-  background-color: #9B59B6;
+  height: 800px;
+  background: url('../media/background-img2.png') no-repeat;
+  background-size: cover;
+}
+@media all and (max-width: 414px) {
+  #greeting-section { 
+    background-position: 24%;
+  }
+}
+
+video { 
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  transition: 1s opacity;
+}
+@media all and (max-width: 800px) {
+  video { display: none; }
 }
 
 #greeting-section #greeting-message-wrapper {
-  padding: 0 10px;
-}
+  position: relative;
+  padding: 388px 5% 0 45%;
 
-#greeting-section #greeting-message-wrapper #greeting-message-name {
-  padding-top: 150px;
-  font-size: 200;
+  color: #F0F0F0;
 }
-@media all and (max-width: 414px) {
-  #greeting-section #greeting-message-wrapper #greeting-message-name {
-    padding-top: 125px;
-  }
-}
-@media all and (max-width: 375px) {
-  #greeting-section #greeting-message-wrapper #greeting-message-name {
-    padding-top: 200px;
-    font-size: 88;
+@media all and (max-width: 800px) {
+  #greeting-section #greeting-message-wrapper { 
+    padding: 388px 5% 0 5%;
   }
 }
 @media all and (max-width: 320px) {
-  #greeting-section #greeting-message-wrapper #greeting-message-name {
-    padding-top: 175px;
-    font-size: 88;
+  #greeting-section #greeting-message-wrapper { 
+    padding: 373px 5% 0 5%;
   }
 }
 
@@ -50,17 +62,23 @@ body {
   max-width: 500px;
 
   margin: 0 auto;
+  padding: 0 5% 0 45%;
 
   font-size: 56;
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 800px) {
+  #greeting-section #social-icons { 
+    padding: 0;
+  }
+}
+@media all and (max-width: 414px) {
   #greeting-section #social-icons {
     font-size: 32;
   }
 }
 @media all and (max-width: 320px) {
   #greeting-section #social-icons {
-    font-size: 32;
+    padding-top: 14px;
   }
 }
 
