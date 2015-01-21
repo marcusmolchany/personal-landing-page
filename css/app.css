@@ -17,11 +17,11 @@ body {
 
 #greeting-section {
   height: 800px;
+  background: url('../media/background-img.jpg') no-repeat;
+  background-size: cover;
 }
 @media all and (max-width: 800px) {
   #greeting-section { 
-    background: url('../media/background-img.jpg') no-repeat;
-    background-size: cover;
     background-position: 24%;
   }
 }

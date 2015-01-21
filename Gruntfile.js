@@ -1,6 +1,30 @@
 module.exports = function (grunt) {
     grunt.initConfig({
+        jsDir: 'js/',
+        cssDir: 'css/',
         pkg: grunt.file.readJSON('package.json'),
+        jshint: {
+          files: ['Gruntfile.js', 'js/*.js', 'test/**/*.js'],
+          options: {
+            globals: {
+              jQuery: true
+            }
+          }
+        },
+        csslint: {
+          strict: {
+            options: {
+              import: 2
+            },
+            src: ['css/*.css']
+          },
+          lax: {
+            options: {
+              import: false
+            },
+            src: ['css/*.css']
+          }
+        },
         concat: {
             options: {
                 separator: ';'
@@ -36,22 +60,14 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            js: {
-                files: ['js/**/*.js'],
-                tasks: ['concat:jsLib', 'concat:js']
-            },
-            scss: {
-                files: ['scss/**/*.scss'],
-                tasks: ['sass', 'concat:css', 'concat:cssMap']
-            },
-            handlebars: {
-                files: ['templates/**/*.hbs'],
-                tasks: ['handlebars', 'concat:js']
-            }
+            files: ['<%=jsDir%>*.js', '<%=cssDir%>*.css'],
+            tasks: ['jshint', 'csslint','concat', 'uglify', 'cssmin']
         }
     })
     ;
 
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -63,7 +79,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('dev', [
-        'concat'
+        'watch'
     ]);
 
     grunt.registerTask('default', [
