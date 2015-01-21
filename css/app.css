@@ -15,13 +15,13 @@ body {
   text-align: center;
 }
 
-#greeting-section {
+.greeting-section {
   height: 800px;
   background: url('../media/background-img.jpg') no-repeat;
   background-size: cover;
 }
 @media all and (max-width: 800px) {
-  #greeting-section { 
+  .greeting-section { 
     background-position: 24%;
   }
 }
@@ -41,24 +41,24 @@ video {
   video { display: none; }
 }
 
-#greeting-section #greeting-message-wrapper {
+.greeting-message-wrapper {
   position: relative;
   padding: 388px 5% 0 45%;
 
   color: #F0F0F0;
 }
 @media all and (max-width: 800px) {
-  #greeting-section #greeting-message-wrapper { 
+  .greeting-message-wrapper { 
     padding: 388px 5% 0 5%;
   }
 }
 @media all and (max-width: 320px) {
-  #greeting-section #greeting-message-wrapper { 
+  .greeting-message-wrapper { 
     padding: 373px 5% 0 5%;
   }
 }
 
-#greeting-section #social-icons {
+.social-icons {
   max-width: 500px;
 
   margin: 0 auto;
@@ -67,28 +67,28 @@ video {
   font-size: 56;
 }
 @media all and (max-width: 800px) {
-  #greeting-section #social-icons { 
+  .social-icons { 
     padding: 0;
   }
 }
 @media all and (max-width: 414px) {
-  #greeting-section #social-icons {
+  .social-icons {
     font-size: 32;
   }
 }
 @media all and (max-width: 320px) {
-  #greeting-section #social-icons {
+  .social-icons {
     padding-top: 14px;
   }
 }
 
-#greeting-section #social-icons a {
+.social-icons-link {
   margin: 0 15px;
 
   text-decoration: none;
 }
 
-#greeting-section #social-icons a i {
+.animated-icon {
   opacity: 0;
 
   -webkit-transition: all 0.3s ease-in;
@@ -104,11 +104,11 @@ video {
           transform: translateY(50px);
 }
 
-#greeting-section #social-icons a i:hover {
+.animated-icon:hover {
   font-size: 60;
 }
 
-#greeting-section #social-icons a i.animate {
+.animated-icon.animate {
   opacity: 1;
 
   -webkit-transform: translateY(0px);
@@ -118,11 +118,11 @@ video {
           transform: translateY(0px);
 }
 
-#greeting-section #social-icons a i.fa-twitter {
+.fa-twitter {
   color: #55ACEE;
 }
 
-#greeting-section #social-icons a i.fa-vine {
+.fa-vine {
   color: #00a478;
 
   -webkit-transition-delay: 0.03s;
@@ -132,7 +132,7 @@ video {
           transition-delay: 0.03s;
 }
 
-#greeting-section #social-icons a i.fa-linkedin {
+.fa-linkedin {
   color: #0092D8;
 
   -webkit-transition-delay: 0.06s;
@@ -142,7 +142,7 @@ video {
           transition-delay: 0.06s;
 }
 
-#greeting-section #social-icons a i.fa-github {
+.fa-github {
   color: #AEADAF;
 
   -webkit-transition-delay: 0.09s;
@@ -152,64 +152,58 @@ video {
           transition-delay: 0.09s;
 }
 
-#bio-section {
+.bio-section {
   background-color: #E67E22;
 }
 
-#bio-section #bio-section-text {
+.bio-section-text {
   margin: 0 auto;
   max-width: 700px;
   padding: 200px 10px;
 }
 
-#bio-section #bio-section-text p {
+.bio-section-paragraph {
   margin: 0;
 }
 
-#showcase-section {
+.showcase-section {
   background-color: #3498DB;
 }
 
-#showcase-section #showcase-title {
+.showcase-section-title {
   padding-top: 100px;
 
   font-size: 56;
 }
 @media all and (max-width: 414px) {
-  #showcase-section #showcase-title {
+  .showcase-section-title {
     padding-top: 50px;
     font-size: 32;
   }
 }
 @media all and (max-width: 375px) {
-  #showcase-section #showcase-title {
-    padding-top: 50px;
-    font-size: 32;
-  }
+  /* same as above */
 }
 @media all and (max-width: 320px) {
-  #showcase-section #showcase-title {
-    padding-top: 50px;
-    font-size: 32;
-  }
+  /* same as above */
 }
 
-#showcase-section #showcase-wrapper {
+.showcase-wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
 
-#showcase-section #showcase-wrapper a {
+.showcase-section-link {
   text-decoration: none;
 }
 
-#showcase-section #showcase-wrapper a:link,
-#showcase-section #showcase-wrapper a:visited,
-#showcase-section #showcase-wrapper a:active {
+.showcase-section-link:link,
+.showcase-section-link:visited,
+.showcase-section-link:active {
   color: black;
 }
 
-#showcase-section #showcase-wrapper .showcase {
+.showcase {
   position: relative;
   display: inline-block;
   opacity: 0;
@@ -226,7 +220,7 @@ video {
           transition: all 0.3s ease-in;
 }
 @media all and (max-width: 414px) {
-  #showcase-section #showcase-wrapper .showcase {
+  .showcase {
     display: block;
     height: 100px;
     width: 126px;
@@ -234,7 +228,7 @@ video {
   }
 }
 @media all and (max-width: 375px) {
-  #showcase-section #showcase-wrapper .showcase {
+  .showcase {
     display: block;
     height: 100px;
     width: 125px;
@@ -242,7 +236,7 @@ video {
   }
 }
 @media all and (max-width: 320px) {
-  #showcase-section #showcase-wrapper .showcase {
+  .showcase {
     display: block;
     height: 80px;
     width: 100px;
@@ -251,25 +245,25 @@ video {
   }
 }
 
-#showcase-section #showcase-wrapper .showcase.animate {
+.showcase.animate {
   opacity: 1;
 }
 
-#showcase-section #showcase-wrapper #showcase-menu-slider {
+#showcase-menu-slider {
   -webkit-transition-delay: 0.2s;
      -moz-transition-delay: 0.2s;
       -ms-transition-delay: 0.2s;
        -o-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
-#showcase-section #showcase-wrapper #showcase-blog {
+#showcase-blog {
   -webkit-transition-delay: 0.4s;
      -moz-transition-delay: 0.4s;
       -ms-transition-delay: 0.4s;
        -o-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
-#showcase-section #showcase-wrapper #showcase-resume {
+#showcase-resume {
   -webkit-transition-delay: 0.6s;
      -moz-transition-delay: 0.6s;
       -ms-transition-delay: 0.6s;
@@ -277,69 +271,64 @@ video {
           transition-delay: 0.6s;
 }
 
-#showcase-section #showcase-wrapper .showcase .showcase-title {
+.showcase-title {
   padding-top: 20px;
 }
 @media all and (max-width: 414px) {
-  #showcase-section #showcase-wrapper .showcase .showcase-title {
+  .showcase-title {
     padding-top: 15px;
   }
 }
 @media all and (max-width: 375px) {
-  #showcase-section #showcase-wrapper .showcase .showcase-title {
-    padding-top: 15px;
-  }
+  /* same as above */
 }
 @media all and (max-width: 320px) {
-  #showcase-section #showcase-wrapper .showcase .showcase-title {
+  .showcase-title {
     padding-top: 8px;
   }
 }
 
-#showcase-section #showcase-wrapper .showcase i {
+.showcase-icon {
   font-size: 56;
   padding-top: 15px;
 }
 @media all and (max-width: 414px) {
-  #showcase-section #showcase-wrapper .showcase i {
+  .showcase-icon {
     font-size: 36;
     padding-top: 10px;
   }
 }
 @media all and (max-width: 375px) {
-  #showcase-section #showcase-wrapper .showcase i {
-    font-size: 36;
-    padding-top: 10px;
-  }
+  /* same as above */
 }
 @media all and (max-width: 320px) {
-  #showcase-section #showcase-wrapper .showcase i {
+  .showcase-icon {
     font-size: 36;
     padding-top: 8px;
   }
 }
 
-#interests-section {
+.interests-section {
   background-color: #1ABC9C;
 }
 
-#interests-section #interests-section-text {
+.interests-section-text {
   margin: 0 auto;
   max-width: 700px;
   padding: 0 10px;
 }
 
-#interests-section #interests-section-text p {
+.interests-section-paragraph {
   position: relative;
   top: 140;
   margin: 0;
 }
 
-#contact-section {
+.contact-section {
   background-color: #E74C3C;
 }
 
-#contact-section #contact-button-wrapper a #contact-button {
+.contact-button {
   height: 100px;
   width: 200px;
   border: 5px solid white;
@@ -349,10 +338,10 @@ video {
   font-size: 20;
 }
 
-#contact-section #contact-button-wrapper a #contact-button:hover {
+.contact-button:hover {
   background-color: lightgray;
 }
 
-#contact-section #contact-button-wrapper a #contact-button:active {
+.contact-button:active {
   background-color: #C1C1C1;
 }

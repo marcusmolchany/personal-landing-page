@@ -12,7 +12,7 @@
         $showcaseSection.removeClass("animate");
       }
 
-      var $interestsSectionParagraph = $("#interests-section p");
+      var $interestsSectionParagraph = $(".interests-section-paragraph");
       if (topOfWindow >= 2000) {
 
       } else if (topOfWindow >= 1500) {
@@ -27,7 +27,7 @@
                         '<source src="media/background-video.webm" type="video/webm">' +
                         '<source src="media/background-video.mp4" type="video/mp4">' +
                       '</video>');
-      $("#greeting-section").prepend($video);
+      $(".greeting-section").prepend($video);
     }
   };
 
