@@ -23,11 +23,9 @@
 
     var width = $(window).width();
     if (width > 800) {
-      var $video = $('<video autoplay  poster="media/background-img.jpg" id="bgvid" loop>' +
-                        '<source src="media/background-video.webm" type="video/webm">' +
-                        '<source src="media/background-video.mp4" type="video/mp4">' +
-                      '</video>');
-      $(".greeting-section").prepend($video);
+      var $videoSource = $('<source src="media/background-video.webm" type="video/webm">' +
+                     '<source src="media/background-video.mp4" type="video/mp4">');
+      $("#bgvid").prepend($videoSource);
     }
   };
 
